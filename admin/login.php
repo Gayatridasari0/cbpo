@@ -19,13 +19,21 @@
       color: #fff4f4 !important;
       background: #8080801c;
     }
+    .card {
+    background-color: rgba(255, 255, 255, 0.1) !important; /* makes it transparent */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5); /* optional: adds soft shadow */
+    border: 1px solid rgba(255,255,255,0.2); /* optional: subtle border */
+    backdrop-filter: blur(6px); /* optional: frosted glass effect */
+  }
   </style>
-  <h1 class="text-center text-white px-4 py-5" id="page-title"><b><?php echo $_settings->info('name') ?></b></h1>
+  <h1 class="text-center text-white px-4 py-5" id="page-title"><b>The Minimalist Rack</b></h1>
 <div class="login-box">
   <!-- /.login-logo -->
   <div class="card card-primary my-2">
     <div class="card-body">
-      <p class="login-box-msg">Please enter your credentials</p>
+    <p style="font-weight: bold; font-size: 1.3rem; color:rgb(251, 247, 247); text-align: center;">
+  Please enter your credentials
+    </p>
       <form id="login-frm" action="" method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" name="username" autofocus placeholder="Username">
