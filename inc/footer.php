@@ -61,8 +61,8 @@
 <!-- Footer-->
 <footer class="py-4 bg-gradient-pink">
             <div class="container">
-              <p class="m-0 text-center text-white">For educational only &copy; <?php echo $_settings->info('short_name') ?> 2021</p>
-              <p class="m-0 text-center text-white">Please Subscribe: <a href="https://1sourcecodr.blogspot.com/">1 Source code</a></p>
+              <p class="m-0 text-center text-white">Where your style story begins. 🧵</p>
+              <p class="m-0 text-center text-white">Done By Group 6 &copy; 2025</p>
           </div>
         </footer>
 
