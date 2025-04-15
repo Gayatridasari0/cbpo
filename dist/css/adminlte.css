@@ -18319,7 +18319,7 @@ body.text-sm .input-group-text {
 .card.bg-pink .bootstrap-datetimepicker-widget table td.active:hover,
 .card.bg-gradient-pink .bootstrap-datetimepicker-widget table td.active,
 .card.bg-gradient-pink .bootstrap-datetimepicker-widget table td.active:hover {
-  background-color: #ed6ca7;
+  background-color: #66b3ff;
   color: #fff;
 }
 
@@ -30770,7 +30770,7 @@ blockquote.quote-gray-dark h6 {
 }
 
 .bg-gradient-pink {
-  background: #e83e8c linear-gradient(180deg, #eb5b9d, #e83e8c) repeat-x !important;
+  background: #66b3ff linear-gradient(180deg, #66b3ff, #66b3ff) repeat-x !important;
   color: #fff;
 }
 
@@ -30780,14 +30780,14 @@ blockquote.quote-gray-dark h6 {
 }
 
 .bg-gradient-pink.btn:hover {
-  background: #e83e8c linear-gradient(180deg, #e83e8c, #e41c78) repeat-x !important;
-  border-color: #d91a72;
+  background: #66b3ff linear-gradient(180deg, #66b3ff, #66b3ff) repeat-x !important;
+  border-color: #66b3ff;
   color: #ececec;
 }
 
 .bg-gradient-pink.btn:not(:disabled):not(.disabled):active, .bg-gradient-pink.btn:not(:disabled):not(.disabled).active, .bg-gradient-pink.btn:active, .bg-gradient-pink.btn.active {
-  background: #e83e8c linear-gradient(180deg, #df3c87, #d91a72) repeat-x !important;
-  border-color: #ce196c;
+  background: #66b3ff linear-gradient(180deg, #66b3ff, #66b3ff) repeat-x !important;
+  border-color: #66b3ff;
   color: #fff;
 }
 
