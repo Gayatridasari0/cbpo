@@ -56,12 +56,12 @@
   })
 </script>
 <footer class="main-footer text-sm">
-        <strong>For educational only <?php echo date('Y') ?>. 
+        <strong>Thank you for visiting <?php echo date('Y') ?>. 
         <!-- <a href=""></a> -->
         </strong>
-        All rights reserved.
+        
         <div class="float-right d-none d-sm-inline-block">
-          <b><?php echo $_settings->info('short_name') ?> (by: <a href="https://1sourcecodr.blogspot.com/" target="blank">1 source code</a> )</b> v1.0
+          <p>Team 6</p>
         </div>
       </footer>
     </div>
