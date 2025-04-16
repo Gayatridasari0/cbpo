@@ -30770,7 +30770,7 @@ blockquote.quote-gray-dark h6 {
 }
 
 .bg-gradient-pink {
-  background: #66b3ff linear-gradient(180deg, #66b3ff, #66b3ff) repeat-x !important;
+  background: #e83e8c linear-gradient(180deg, #eb5b9d, #e83e8c) repeat-x !important;
   color: #fff;
 }
 
@@ -30780,14 +30780,14 @@ blockquote.quote-gray-dark h6 {
 }
 
 .bg-gradient-pink.btn:hover {
-  background: #66b3ff linear-gradient(180deg, #66b3ff, #66b3ff) repeat-x !important;
-  border-color: #66b3ff;
+  background: #e83e8c linear-gradient(180deg, #eb5b9d, #e83e8c) repeat-x !important;
+  border-color: #e83e8c;
   color: #ececec;
 }
 
 .bg-gradient-pink.btn:not(:disabled):not(.disabled):active, .bg-gradient-pink.btn:not(:disabled):not(.disabled).active, .bg-gradient-pink.btn:active, .bg-gradient-pink.btn.active {
-  background: #66b3ff linear-gradient(180deg, #66b3ff, #66b3ff) repeat-x !important;
-  border-color: #66b3ff;
+  background: #e83e8c linear-gradient(180deg, #eb5b9d, #e83e8c) repeat-x !important;
+  border-color: #e83e8c;
   color: #fff;
 }
 

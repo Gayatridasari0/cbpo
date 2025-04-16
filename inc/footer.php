@@ -59,7 +59,7 @@
   })
 </script>
 <!-- Footer-->
-<footer class="py-4 bg-gradient-pink">
+<footer class="py-4 bg-gradient-blue">
             <div class="container">
               <p class="m-0 text-center text-white">Team 6</p>
               <p class="m-0 text-center text-white">Thanks for visiting</a></p>

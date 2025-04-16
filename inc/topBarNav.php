@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-pink">
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-blue">
             <div class="container px-4 px-lg-5 ">
                 <button class="navbar-toggler btn btn-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <a class="navbar-brand" href="./">
                 <img src="<?php echo validate_image($_settings->info('logo')) ?>" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-                </a>
-
+                <?php echo $_settings->info('short_name') ?>  
+              </a>
                 <form class="form-inline" id="search-form">
                   <div class="input-group">
                     <input class="form-control form-control-sm form " type="search" placeholder="Search" aria-label="Search" name="search"  value="<?php echo isset($_GET['search']) ? $_GET['search'] : "" ?>"  aria-describedby="button-addon2">
