@@ -189,7 +189,7 @@ Class Master extends DBConnection {
 		$save = $this->conn->query($sql);
 		if($save){
 			$pid = empty($id) ? $this->conn->insert_id : $id;
-			$upload_path = "uploads/product_".$pid;
+			$upload_path = "uploads/Products/product_".$pid;
 			if(!is_dir(base_app.$upload_path))
 				mkdir(base_app.$upload_path);
 			if(isset($_FILES['img']) && count($_FILES['img']['tmp_name']) > 0){

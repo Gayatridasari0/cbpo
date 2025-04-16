@@ -63,7 +63,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 			</div>
             <?php 
             if(isset($id)):
-            $upload_path = "uploads/product_".$id;
+            $upload_path = "uploads/Products/product_".$id;
             if(is_dir(base_app.$upload_path)): 
             ?>
             <?php 

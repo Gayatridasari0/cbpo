@@ -13,7 +13,7 @@
                 <?php 
                     $qry = $conn->query("SELECT c.*,p.name,i.price,p.id as pid,cc.category, b.name as `brand`,i.variant from `cart` c inner join `inventory` i on i.id=c.inventory_id inner join products p on p.id = i.product_id inner join brands b on p.brand_id = b.id inner join categories cc on p.category_id = cc.id where c.client_id = ".$_settings->userdata('id'));
                     while($row= $qry->fetch_assoc()):
-                        $upload_path = base_app.'/uploads/product_'.$row['pid'];
+                        $upload_path = base_app.'/uploads/Products/product_'.$row['pid'];
                         $img = "";
                         foreach($row as $k=> $v){
                             $row[$k] = trim(stripslashes($v));
@@ -21,7 +21,7 @@
                         if(is_dir($upload_path)){
                             $fileO = scandir($upload_path);
                             if(isset($fileO[2]))
-                                $img = "uploads/product_".$row['pid']."/".$fileO[2];
+                                $img = "uploads/Products/product_".$row['pid']."/".$fileO[2];
                             // var_dump($fileO);
                         }
                 ?>

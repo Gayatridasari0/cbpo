@@ -4,12 +4,12 @@
      foreach($products->fetch_assoc() as $k => $v){
          $$k= stripslashes($v);
      }
-    $upload_path = base_app.'/uploads/product_'.$id;
+    $upload_path = base_app.'/uploads/Products/product_'.$id;
     $img = "";
     if(is_dir($upload_path)){
         $fileO = scandir($upload_path);
         if(isset($fileO[2]))
-            $img = "uploads/product_".$id."/".$fileO[2];
+            $img = "uploads/Products/product_".$id."/".$fileO[2];
         // var_dump($fileO);
     }
     $inventory = $conn->query("SELECT * FROM inventory where product_id = ".$id." order by variant asc");
@@ -46,7 +46,7 @@
                                 continue;
                     ?>
                     <div class="col">
-                        <a href="javascript:void(0)" class="view-image <?php echo $k == 2 ? "active":'' ?>"><img src="<?php echo validate_image('uploads/product_'.$id.'/'.$img) ?>" loading="lazy"  class="img-thumbnail" alt=""></a>
+                        <a href="javascript:void(0)" class="view-image <?php echo $k == 2 ? "active":'' ?>"><img src="<?php echo validate_image('uploads/Products/product_'.$id.'/'.$img) ?>" loading="lazy"  class="img-thumbnail" alt=""></a>
                     </div>
                     <?php endforeach; ?>
                 </div>
@@ -95,12 +95,12 @@
         <?php 
             $products = $conn->query("SELECT p.*,b.name as bname,c.category  FROM `products` p inner join brands b on p.brand_id = b.id inner join categories c on p.category_id = c.id where p.status = 1 and (p.category_id = '{$category_id}' or p.brand_id = '{$brand_id}') and p.id !='{$id}' order by rand() limit 4 ");
             while($row = $products->fetch_assoc()):
-                $upload_path = base_app.'/uploads/product_'.$row['id'];
+                $upload_path = base_app.'/uploads/Products/product_'.$row['id'];
                 $img = "";
                 if(is_dir($upload_path)){
                     $fileO = scandir($upload_path);
                     if(isset($fileO[2]))
-                        $img = "uploads/product_".$row['id']."/".$fileO[2];
+                        $img = "uploads/Products/product_".$row['id']."/".$fileO[2];
                     // var_dump($fileO);
                 }
                 foreach($row as $k=> $v){

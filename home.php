@@ -80,12 +80,12 @@ $brands = isset($_GET['b']) ? json_decode(urldecode($_GET['b'])) : array();
                         $where = " and p.brand_id in (".implode(",",$brands).") " ;
                         $products = $conn->query("SELECT p.*,b.name as bname,c.category FROM `products` p inner join brands b on p.brand_id = b.id inner join categories c on p.category_id = c.id where p.status = 1 {$where} order by rand() ");
                         while($row = $products->fetch_assoc()):
-                            $upload_path = base_app.'/uploads/product_'.$row['id'];
+                            $upload_path = base_app.'/uploads/Products/product_'.$row['id'];
                             $img = "";
                             if(is_dir($upload_path)){
                                 $fileO = scandir($upload_path);
                                 if(isset($fileO[2]))
-                                    $img = "uploads/product_".$row['id']."/".$fileO[2];
+                                    $img = "uploads/Products/product_".$row['id']."/".$fileO[2];
                                 // var_dump($fileO);
                             }
                             foreach($row as $k=> $v){
