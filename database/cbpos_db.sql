@@ -259,33 +259,20 @@ CREATE TABLE `clients` (
 -- Dumping data for table `clients`
 --
 
-INSERT INTO
-    `clients` (
-        `id`,
-        `firstname`,
-        `lastname`,
-        `gender`,
-        `contact`,
-        `email`,
-        `password`,
-        `default_delivery_address`,
-        `status`,
-        `delete_flag`,
-        `date_created`
-    )
-VALUES (
-        2,
-        'Samantha Jane',
-        'Miller',
-        'Female',
-        '09123456789',
-        'sam23@sample.com',
-        '45bff2a14658fc9b21c6e5e9bf75186b',
-        'Sample Address',
-        1,
-        0,
-        '2022-02-17 14:24:00'
-    );
+INSERT INTO `clients` (`id`, `firstname`, `lastname`, `gender`, `contact`, `email`, `password`, `default_delivery_address`, `status`, `delete_flag`, `date_created`) VALUES
+(2, 'Samantha Jane', 'Miller', 'Female', '09123456789', 'sam23@sample.com', '45bff2a14658fc9b21c6e5e9bf75186b', 'Sample Address', 1, 0, '2022-02-17 14:24:00'),
+(3, 'g', 'd', 'Female', '1234567890', 'xipatip206@anlocc.com', '25d55ad283aa400af464c76d713c07ad', 'xx', 1, 0, '2025-04-11 21:25:33'),
+(4, 'Ava', 'Thompson', 'Female', '(512) 555-0191', 'newokes719@bauscn.com', '1518bf9f493bb8e3ca4c17be68fb0792', '124 Maple Street, Austin, TX 78701', 1, 0, '2025-04-19 12:12:13'),
+(5, 'Liam', 'Carter', 'Male', '(619) 555-0332	', 'liamcareter23@bauscn.com', '93d795bd2a08c670eea5943f9ce8d5d4', '89 Oak Drive, San Diego, CA 92105	', 1, 0, '2025-04-19 12:18:36'),
+(6, 'Mia', 'Reynolds', 'Female', '(407) 555-0448', 'mia.reynolds@example.com', '0f4269846670b8bbb64d99711a495172', '240 Pine Avenue, Orlando, FL 32801\r\n', 1, 0, '2025-04-19 12:31:35'),
+(7, 'Noah', 'Bennett', 'Male', '(303) 555-0679', 'noah.bennett@example.com', '14334d8170f31d885867d5406713c5e1', '56 River Road, Denver, CO 80202\r\n', 1, 0, '2025-04-19 12:33:22'),
+(8, 'Sophia', 'Hayes', 'Female', '(206) 555-0923', 'sophia.hayes@example.com', '6695b93e228411d3ce044d4fc84b7531', '78 Cedar Lane, Seattle, WA 98101\r\n', 1, 0, '2025-04-19 12:35:49'),
+(9, 'Ethan', 'Brooks', 'Male', '(312) 555-1054', 'ethan.brooks@example.com', '52d67053e606a9fa81e61d91c4190c26', '910 Birch Blvd, Chicago, IL 60616\r\n', 1, 0, '2025-04-19 12:37:26'),
+(10, 'Isabella', 'Morgan', 'Female', '(602) 555-1278', 'isabella.morgan@example.com', '10943a2c1693ed7e9c44f2879581c760', '43 Sunset Street, Phoenix, AZ 85001\r\n', 1, 0, '2025-04-19 12:39:27'),
+(11, 'James', 'Parker', 'Male', '(917) 555-1489', 'james.parker@example.com', '19d45bb619c2e7a1bd5a343541922fde', '377 Elm Court, New York, NY 10001\r\n', 1, 0, '2025-04-19 12:41:14'),
+(12, 'Olivia', 'Coleman', 'Female', '(404) 555-1620', 'olivia.coleman@example.com', '8eb2d562c05cc2291b8d256d05885cf9', '611 Walnut Ave, Atlanta, GA 30303\r\n', 1, 0, '2025-04-19 12:42:51'),
+(13, 'Lucas', 'Anderson', 'Male', '(713) 555-1733', 'lucas.anderson@example.com', '0f9443b4e23a37e786152824aa9a42e6', '205 Ash Terrace, Houston, TX 77002\r\n', 1, 0, '2025-04-19 12:45:54');
+
 
 -- --------------------------------------------------------
 
@@ -445,59 +432,49 @@ CREATE TABLE `orders` (
 -- Dumping data for table `orders`
 --
 
-INSERT INTO
-    `orders` (
-        `id`,
-        `ref_code`,
-        `client_id`,
-        `delivery_address`,
-        `payment_method`,
-        `order_type`,
-        `amount`,
-        `status`,
-        `paid`,
-        `date_created`,
-        `date_updated`
-    )
-VALUES (
-        3,
-        '20220200001',
-        2,
-        'Sample Address',
-        'cod',
-        0,
-        900,
-        4,
-        0,
-        '2022-02-17 14:51:58',
-        '2022-02-17 15:04:38'
-    ),
-    (
-        4,
-        '20220200002',
-        2,
-        'Sample Address',
-        'Online Payment',
-        0,
-        1800,
-        3,
-        1,
-        '2022-02-17 15:26:17',
-        '2022-02-17 15:35:45'
-    ),
-    (
-        5,
-        '20220200003',
-        2,
-        'Sample Address',
-        'cod',
-        0,
-        500,
-        3,
-        1,
-        '2022-02-17 15:32:52',
-        '2022-02-17 15:35:32'
-    );
+INSERT INTO `orders` (`id`, `ref_code`, `client_id`, `delivery_address`, `payment_method`, `order_type`, `amount`, `status`, `paid`, `date_created`, `date_updated`) VALUES
+(3, '20220200001', 2, 'Sample Address', 'cod', 0, 900, 4, 0, '2022-02-17 14:51:58', '2022-02-17 15:04:38'),
+(4, '20220200002', 2, 'Sample Address', 'Online Payment', 0, 1800, 3, 1, '2022-02-17 15:26:17', '2022-02-17 15:35:45'),
+(5, '20220200003', 2, 'Sample Address', 'cod', 0, 500, 3, 1, '2022-02-17 15:32:52', '2022-02-17 15:35:32'),
+(6, '20250400001', 3, 'xx', 'cod', 0, 700, 3, 1, '2025-04-11 21:27:01', '2025-04-12 15:41:13'),
+(7, '20250400002', 3, 'xx', 'cod', 0, 900, 3, 1, '2025-04-12 17:29:07', '2025-04-12 17:43:32'),
+(8, '20250400003', 3, 'xx', 'cod', 0, 3166.74, 2, 1, '2025-04-13 10:36:39', '2025-04-13 10:42:07'),
+(9, '20250400004', 3, 'Houston', 'cod', 0, 58, 0, 0, '2025-04-16 21:40:46', NULL),
+(10, '20250400005', 3, 'Houston', 'cod', 0, 10, 0, 0, '2025-04-18 17:08:31', NULL),
+(11, '20250400006', 4, '124 Maple Street, Austin, TX 78701', 'cod', 0, 61, 0, 0, '2025-04-19 12:13:08', NULL),
+(12, '20250400007', 4, '124 Maple Street, Austin, TX 78701', 'cod', 0, 30, 0, 0, '2025-04-19 12:13:39', NULL),
+(13, '20250400008', 4, '124 Maple Street, Austin, TX 78701', 'cod', 0, 34, 0, 0, '2025-04-19 12:15:54', NULL),
+(14, '20250400009', 5, '89 Oak Drive, San Diego, CA 92105	', 'cod', 0, 23, 0, 0, '2025-04-19 12:20:42', NULL),
+(15, '20250400010', 5, '89 Oak Drive, San Diego, CA 92105	', 'cod', 0, 70, 0, 0, '2025-04-19 12:21:08', NULL),
+(16, '20250400011', 5, '89 Oak Drive, San Diego, CA 92105	', 'cod', 0, 15.5, 0, 0, '2025-04-19 12:21:26', NULL),
+(17, '20250400012', 6, '240 Pine Avenue, Orlando, FL 32801\r\n', 'cod', 0, 60, 0, 0, '2025-04-19 12:31:56', NULL),
+(18, '20250400013', 6, '240 Pine Avenue, Orlando, FL 32801\r\n', 'cod', 0, 60, 0, 0, '2025-04-19 12:32:11', NULL),
+(19, '20250400014', 6, '240 Pine Avenue, Orlando, FL 32801\r\n', 'cod', 0, 75, 0, 0, '2025-04-19 12:32:36', NULL),
+(20, '20250400015', 7, '56 River Road, Denver, CO 80202\r\n', 'cod', 0, 44, 0, 0, '2025-04-19 12:33:50', NULL),
+(21, '20250400016', 7, '56 River Road, Denver, CO 80202\r\n', 'cod', 0, 30, 0, 0, '2025-04-19 12:34:01', NULL),
+(22, '20250400017', 7, '56 River Road, Denver, CO 80202\r\n', 'cod', 0, 46, 0, 0, '2025-04-19 12:34:49', NULL),
+(23, '20250400018', 8, '78 Cedar Lane, Seattle, WA 98101\r\n', 'cod', 0, 64, 0, 0, '2025-04-19 12:36:19', NULL),
+(24, '20250400019', 8, '78 Cedar Lane, Seattle, WA 98101\r\n', 'cod', 0, 18, 0, 0, '2025-04-19 12:36:28', NULL),
+(25, '20250400020', 8, '78 Cedar Lane, Seattle, WA 98101\r\n', 'cod', 0, 17, 0, 0, '2025-04-19 12:36:39', NULL),
+(26, '20250400021', 9, '910 Birch Blvd, Chicago, IL 60616\r\n', 'cod', 0, 75, 0, 0, '2025-04-19 12:38:11', NULL),
+(27, '20250400022', 9, '910 Birch Blvd, Chicago, IL 60616\r\n', 'cod', 0, 23, 0, 0, '2025-04-19 12:38:22', NULL),
+(28, '20250400023', 9, '910 Birch Blvd, Chicago, IL 60616\r\n', 'cod', 0, 115, 0, 0, '2025-04-19 12:38:34', NULL),
+(29, '20250400024', 10, '43 Sunset Street, Phoenix, AZ 85001\r\n', 'cod', 0, 44, 0, 0, '2025-04-19 12:39:57', NULL),
+(30, '20250400025', 10, '43 Sunset Street, Phoenix, AZ 85001\r\n', 'cod', 0, 24, 0, 0, '2025-04-19 12:40:07', NULL),
+(31, '20250400026', 11, '377 Elm Court, New York, NY 10001\r\n', 'cod', 0, 15.5, 0, 0, '2025-04-19 12:41:29', NULL),
+(32, '20250400027', 11, '377 Elm Court, New York, NY 10001\r\n', 'cod', 0, 15, 0, 0, '2025-04-19 12:41:39', NULL),
+(33, '20250400028', 11, '377 Elm Court, New York, NY 10001\r\n', 'cod', 0, 19, 0, 0, '2025-04-19 12:41:52', NULL),
+(34, '20250400029', 11, '377 Elm Court, New York, NY 10001\r\n', 'cod', 0, 17, 0, 0, '2025-04-19 12:42:04', NULL),
+(35, '20250400030', 12, '611 Walnut Ave, Atlanta, GA 30303\r\n', 'cod', 0, 19, 0, 0, '2025-04-19 12:44:38', NULL),
+(36, '20250400031', 12, '611 Walnut Ave, Atlanta, GA 30303\r\n', 'cod', 0, 25, 0, 0, '2025-04-19 12:44:49', NULL),
+(37, '20250400032', 12, '611 Walnut Ave, Atlanta, GA 30303\r\n', 'cod', 0, 25, 0, 0, '2025-04-19 12:45:01', NULL),
+(38, '20250400033', 12, '611 Walnut Ave, Atlanta, GA 30303\r\n', 'cod', 0, 25, 0, 0, '2025-04-19 12:45:09', NULL),
+(39, '20250400034', 13, '205 Ash Terrace, Houston, TX 77002\r\n', 'cod', 0, 45, 0, 0, '2025-04-19 12:46:36', NULL),
+(40, '20250400035', 13, '205 Ash Terrace, Houston, TX 77002\r\n', 'cod', 0, 25, 0, 0, '2025-04-19 12:46:45', NULL),
+(41, '20250400036', 13, '205 Ash Terrace, Houston, TX 77002\r\n', 'cod', 0, 44, 0, 0, '2025-04-19 12:47:03', NULL),
+(42, '20250400037', 13, '205 Ash Terrace, Houston, TX 77002\r\n', 'cod', 0, 24, 0, 0, '2025-04-19 12:47:14', NULL),
+(43, '20250400038', 13, '205 Ash Terrace, Houston, TX 77002\r\n', 'cod', 0, 25, 0, 0, '2025-04-19 12:47:24', NULL);
+
 
 -- --------------------------------------------------------
 
@@ -518,19 +495,56 @@ CREATE TABLE `order_list` (
 -- Dumping data for table `order_list`
 --
 
-INSERT INTO
-    `order_list` (
-        `id`,
-        `order_id`,
-        `inventory_id`,
-        `quantity`,
-        `price`,
-        `total`
-    )
-VALUES (4, 3, 3, 3, 300, 900),
-    (5, 4, 3, 4, 300, 1200),
-    (6, 4, 1, 3, 200, 600),
-    (7, 5, 3, 2, 250, 500);
+INSERT INTO `order_list` (`id`, `order_id`, `inventory_id`, `quantity`, `price`, `total`) VALUES
+(11, 9, 7, 1, 14, 14),
+(12, 9, 9, 2, 12, 24),
+(13, 9, 26, 1, 20, 20),
+(14, 10, 1, 1, 10, 10),
+(15, 11, 24, 1, 15, 15),
+(16, 11, 21, 1, 23, 23),
+(17, 11, 31, 1, 23, 23),
+(18, 12, 51, 1, 14, 14),
+(19, 12, 46, 1, 16, 16),
+(20, 13, 26, 1, 20, 20),
+(21, 13, 27, 1, 14, 14),
+(22, 14, 5, 1, 23, 23),
+(23, 15, 14, 1, 35, 35),
+(24, 15, 3, 1, 35, 35),
+(25, 16, 4, 1, 15.5, 15.5),
+(26, 17, 26, 3, 20, 60),
+(27, 18, 36, 3, 20, 60),
+(28, 19, 25, 3, 25, 75),
+(29, 20, 9, 1, 30, 30),
+(30, 20, 7, 1, 14, 14),
+(31, 21, 3, 1, 30, 30),
+(32, 22, 5, 2, 23, 46),
+(33, 23, 30, 1, 16, 16),
+(34, 23, 5, 1, 23, 23),
+(35, 23, 47, 1, 25, 25),
+(36, 24, 27, 1, 18, 18),
+(37, 25, 33, 1, 17, 17),
+(38, 26, 6, 5, 15, 75),
+(39, 27, 10, 1, 23, 23),
+(40, 28, 12, 5, 23, 115),
+(41, 29, 34, 1, 25, 25),
+(42, 29, 24, 1, 19, 19),
+(43, 30, 43, 1, 24, 24),
+(44, 31, 4, 1, 15.5, 15.5),
+(45, 32, 1, 1, 15, 15),
+(46, 33, 13, 1, 19, 19),
+(47, 34, 2, 1, 17, 17),
+(48, 35, 24, 1, 19, 19),
+(49, 36, 32, 1, 25, 25),
+(50, 37, 53, 1, 25, 25),
+(51, 38, 50, 1, 25, 25),
+(52, 39, 18, 2, 15, 30),
+(53, 39, 6, 1, 15, 15),
+(54, 40, 28, 1, 25, 25),
+(55, 41, 40, 1, 25, 25),
+(56, 41, 42, 1, 19, 19),
+(57, 42, 46, 1, 24, 24),
+(58, 43, 23, 1, 25, 25);
+
 
 -- --------------------------------------------------------
 
