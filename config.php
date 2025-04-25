@@ -1,7 +1,7 @@
 <?php
 ob_start();
-ini_set('date.timezone','Asia/Manila');
-date_default_timezone_set('Asia/Manila');
+ini_set('date.timezone', 'America/Chicago');
+date_default_timezone_set('America/Chicago');
 session_start();
 
 require_once('initialize.php');
